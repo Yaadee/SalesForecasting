@@ -103,3 +103,23 @@
 2024-05-29 17:40:48,879:INFO:New features extracted from date column
 2024-05-29 17:40:49,310:INFO:Data loaded and merged
 2024-05-29 17:40:49,373:INFO:Missing values handled
+2024-05-29 18:21:02,604:INFO:Data loaded and merged
+2024-05-29 18:30:52,599:INFO:Data loaded and merged
+2024-05-29 18:34:01,599:INFO:Data loaded and merged
+2024-05-29 18:35:12,680:INFO:Data loaded and merged
+2024-05-29 18:36:41,152:INFO:Data loaded and merged
+2024-05-29 18:36:41,242:INFO:Missing values handled
+2024-05-29 18:36:41,326:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 18:36:41,424:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 18:36:41,535:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 18:36:41,636:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 18:36:41,737:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 18:36:41,844:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 18:37:37,105:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 18:37:37,403:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 18:37:55,080:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 18:37:55,372:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 18:38:20,960:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 18:38:21,270:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 18:38:44,122:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 18:38:44,386:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
