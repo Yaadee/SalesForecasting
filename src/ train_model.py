@@ -2,11 +2,11 @@ import joblib
 from datetime import datetime
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_absolute_error
-from data_cleaning import load_and_merge_data, handle_missing_values, convert_categorical_to_numeric, extract_date_features
-from preprocess import feature_engineering, scale_features
-from models import build_model_pipeline
+from  data_cleaning import load_and_merge_data, handle_missing_values, convert_categorical_to_numeric, extract_date_features
+from  preprocess import feature_engineering, scale_features
+from  models import build_model_pipeline
 
-# Load and preprocess data
+# Load and preprocess training data
 df = load_and_merge_data('data/train.csv', 'data/store.csv')
 df = handle_missing_values(df)
 df = convert_categorical_to_numeric(df)
@@ -31,3 +31,4 @@ print(f'Mean Absolute Error: {mae}')
 # Save model
 timestamp = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
 joblib.dump(pipeline, f'app/model_{timestamp}.pkl')
+joblib.dump(scaler, f'app/scaler_{timestamp}.pkl')

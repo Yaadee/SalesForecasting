@@ -1,2 +1,94 @@
 2024-05-27 19:45:18,806:INFO:Data loaded and merged
 2024-05-27 19:45:18,868:INFO:Missing values handled
+2024-05-28 14:49:01,111:INFO:Data loaded and merged
+2024-05-28 14:49:01,591:INFO:Data loaded and merged
+2024-05-28 14:49:01,783:INFO:New features extracted from date column
+2024-05-28 14:49:02,206:INFO:Data loaded and merged
+2024-05-28 14:49:02,260:INFO:Missing values handled
+2024-05-28 19:46:46,243:INFO:Data loaded and merged
+2024-05-28 19:46:46,820:INFO:Data loaded and merged
+2024-05-28 19:46:47,005:INFO:New features extracted from date column
+2024-05-28 19:46:47,511:INFO:Data loaded and merged
+2024-05-28 19:46:47,693:INFO:Missing values handled
+2024-05-29 07:01:00,145:INFO:Data loaded and merged
+2024-05-29 07:01:00,270:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 07:01:00,363:INFO:Column Date converted to numeric
+2024-05-29 07:01:00,473:INFO:Column StateHoliday converted to numeric
+2024-05-29 07:01:00,567:INFO:Column StoreType converted to numeric
+2024-05-29 07:01:00,664:INFO:Column Assortment converted to numeric
+2024-05-29 07:01:00,843:INFO:Column PromoInterval converted to numeric
+2024-05-29 07:01:01,257:INFO:Data loaded and merged
+2024-05-29 07:01:01,435:INFO:New features extracted from date column
+2024-05-29 07:01:01,861:INFO:Data loaded and merged
+2024-05-29 07:01:01,923:INFO:Missing values handled
+2024-05-29 07:02:07,200:INFO:Data loaded and merged
+2024-05-29 07:02:07,289:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 07:02:07,384:INFO:Column Date converted to numeric
+2024-05-29 07:02:07,497:INFO:Column StateHoliday converted to numeric
+2024-05-29 07:02:07,596:INFO:Column StoreType converted to numeric
+2024-05-29 07:02:07,699:INFO:Column Assortment converted to numeric
+2024-05-29 07:02:07,882:INFO:Column PromoInterval converted to numeric
+2024-05-29 07:02:08,306:INFO:Data loaded and merged
+2024-05-29 07:02:08,481:INFO:New features extracted from date column
+2024-05-29 07:02:08,901:INFO:Data loaded and merged
+2024-05-29 07:02:08,960:INFO:Missing values handled
+2024-05-29 07:20:12,323:INFO:Data loaded and merged
+2024-05-29 07:20:12,405:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 07:20:12,506:INFO:Column Date converted to numeric
+2024-05-29 07:20:12,629:INFO:Column StateHoliday converted to numeric
+2024-05-29 07:20:12,739:INFO:Column StoreType converted to numeric
+2024-05-29 07:20:12,854:INFO:Column Assortment converted to numeric
+2024-05-29 07:20:13,055:INFO:Column PromoInterval converted to numeric
+2024-05-29 07:20:13,553:INFO:Data loaded and merged
+2024-05-29 07:20:13,758:INFO:New features extracted from date column
+2024-05-29 07:20:14,231:INFO:Data loaded and merged
+2024-05-29 07:20:14,307:INFO:Missing values handled
+2024-05-29 07:22:57,707:INFO:Data loaded and merged
+2024-05-29 07:22:57,798:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 07:22:57,892:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 07:22:58,004:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 07:22:58,107:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 07:22:58,207:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 07:22:58,391:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 07:22:58,857:INFO:Data loaded and merged
+2024-05-29 07:22:59,035:INFO:New features extracted from date column
+2024-05-29 07:22:59,443:INFO:Data loaded and merged
+2024-05-29 07:22:59,505:INFO:Missing values handled
+2024-05-29 07:25:03,654:INFO:Data loaded and merged
+2024-05-29 07:25:03,732:INFO:Missing values handled
+2024-05-29 07:25:03,832:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 07:25:03,941:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 07:25:04,071:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 07:25:04,181:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 07:25:04,295:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 07:25:04,410:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 07:25:04,544:INFO:New features extracted from date column
+2024-05-29 13:43:29,576:INFO:Data loaded and merged
+2024-05-29 13:43:29,700:INFO:Missing values handled
+2024-05-29 13:43:29,793:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 13:43:29,902:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 13:43:30,029:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 13:43:30,153:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 13:43:30,272:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 13:43:30,387:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 13:43:30,525:INFO:New features extracted from date column
+2024-05-29 13:45:06,030:INFO:Data loaded and merged
+2024-05-29 13:45:06,098:INFO:Missing values handled
+2024-05-29 13:45:06,196:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 13:45:06,305:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 13:45:06,438:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 13:45:06,551:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 13:45:06,665:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 13:45:06,788:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 13:45:06,920:INFO:New features extracted from date column
+2024-05-29 13:45:21,124:INFO:Data loaded and merged
+2024-05-29 13:45:21,215:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 13:45:21,314:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 13:45:21,429:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 13:45:21,533:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 13:45:21,643:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 13:45:21,832:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 13:45:22,285:INFO:Data loaded and merged
+2024-05-29 13:45:22,522:INFO:New features extracted from date column
+2024-05-29 13:45:22,936:INFO:Data loaded and merged
+2024-05-29 13:45:22,999:INFO:Missing values handled
