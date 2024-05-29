@@ -1,4 +1,4 @@
 [core]
     remote = localremote
 ['remote "localremote"']
-    url = /Desktop/SalesForecastDVC
+    url = /home/yadasa/SalesForecastDVC

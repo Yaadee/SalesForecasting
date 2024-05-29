@@ -21,9 +21,8 @@ jobs:
 
     - name: Configure DVC remote
       run: |
-        mkdir -p /Desktop/SalesForecastDVC
-        dvc remote add -d localremote /Desktop/SalesForecastDVC
-        # No need to set type for local remote
+        mkdir -p ~/SalesForecastDVC
+        dvc remote add -d -f localremote ~/SalesForecastDVC
 
     - name: Pull data from DVC
       run: dvc pull
