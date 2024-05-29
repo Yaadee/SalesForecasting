@@ -1,6 +1,4 @@
-name: CI
-
-on: [push,pull_request]
+on: [push, pull_request]
 
 jobs:
   build:
@@ -19,12 +17,16 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install dvc[gdrive]
+        pip install dvc
+
+    - name: Configure DVC remote
+      run: |
+        mkdir -p /Desktop/SalesForecastDVC
+        dvc remote add -d localremote /Desktop/SalesForecastDVC
+        # No need to set type for local remote
 
     - name: Pull data from DVC
       run: dvc pull
-      env:
-        GDRIVE_CLI: "true"
 
     - name: Run tests
       run: pytest tests/

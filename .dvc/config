@@ -1,5 +1,4 @@
 [core]
-    remote = myremote
-['remote "myremote"']
-    url = gdrive://17-vBIaziKbL3ZTljpqLpwssQpFfU8VN9
-    gdrive_use_service_account = true
+    remote = localremote
+['remote "localremote"']
+    url = /Desktop/SalesForecastDVC
