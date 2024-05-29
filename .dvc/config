@@ -1,4 +1,3 @@
 [core]
     remote = localremote
-['remote "localremote"']
-    url = /home/yadasa/SalesForecastDVC
+    url = file:///home/yadasa/SalesForecastDVC

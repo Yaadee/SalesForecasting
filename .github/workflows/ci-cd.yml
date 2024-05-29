@@ -21,8 +21,8 @@ jobs:
 
     - name: Configure DVC remote
       run: |
-        sudo mkdir -p /home/yadasa/SalesForecastDVC
-        dvc remote add -d -f localremote /home/yadasa/SalesForecastDVC
+        sudo mkdir -p /home/runner/SalesForecastDVC
+        dvc remote add -d -f localremote /home/runner/SalesForecastDVC
 
     - name: Pull data from DVC
       run: dvc pull
