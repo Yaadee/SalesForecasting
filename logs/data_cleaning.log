@@ -123,3 +123,41 @@
 2024-05-29 18:38:21,270:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-05-29 18:38:44,122:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
 2024-05-29 18:38:44,386:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:11:02,260:INFO:Data loaded and merged
+2024-05-29 21:11:02,347:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 21:11:02,444:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 21:11:02,558:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 21:11:02,660:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 21:11:02,762:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 21:11:02,952:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 21:11:03,397:INFO:Data loaded and merged
+2024-05-29 21:11:03,597:INFO:New features extracted from date column
+2024-05-29 21:11:04,008:INFO:Data loaded and merged
+2024-05-29 21:11:04,089:INFO:Missing values handled
+2024-05-29 21:16:10,960:INFO:Data loaded and merged
+2024-05-29 21:16:11,024:INFO:Missing values handled
+2024-05-29 21:16:11,118:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 21:16:11,210:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 21:16:11,317:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 21:16:11,412:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 21:16:11,509:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 21:16:11,602:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 21:16:43,514:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:16:43,806:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:16:47,829:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:16:48,120:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:16:56,732:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:16:57,018:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:17:02,480:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:17:02,744:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-05-29 21:19:06,847:INFO:Data loaded and merged
+2024-05-29 21:19:06,932:INFO:Categorical columns identified: Index(['Date', 'StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-05-29 21:19:07,024:INFO:Column Date converted to numeric and cast to int32
+2024-05-29 21:19:07,130:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-05-29 21:19:07,232:INFO:Column StoreType converted to numeric and cast to int32
+2024-05-29 21:19:07,339:INFO:Column Assortment converted to numeric and cast to int32
+2024-05-29 21:19:07,516:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-05-29 21:19:07,940:INFO:Data loaded and merged
+2024-05-29 21:19:08,115:INFO:New features extracted from date column
+2024-05-29 21:19:08,501:INFO:Data loaded and merged
+2024-05-29 21:19:08,559:INFO:Missing values handled

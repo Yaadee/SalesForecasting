@@ -1,4 +1,9 @@
 import pandas as pd
+import logging
+# Set up logging
+logging.basicConfig(level=logging.INFO, filename='logs/feature_engineering.log',
+                    format='%(asctime)s:%(levelname)s:%(message)s')
+
 
 def extract_date_features(df):
     df['Date'] = pd.to_datetime(df['Date'])

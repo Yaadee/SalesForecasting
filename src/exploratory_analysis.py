@@ -21,6 +21,10 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import logging
+# Set up logging
+logging.basicConfig(level=logging.INFO, filename='logs/expalanatory_analysis.log',
+                    format='%(asctime)s:%(levelname)s:%(message)s')
 
 def analyze_sales_trends(df):
     plt.figure(figsize=(10, 6))
