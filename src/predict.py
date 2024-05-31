@@ -1,11 +1,12 @@
 import pandas as pd
 import joblib
-from data_cleaning import load_test_data, handle_missing_values, convert_categorical_to_numeric, extract_date_features
+from data_cleaning import load_data, handle_missing_values, convert_categorical_to_numeric
 from preprocess import feature_engineering
+from feature_engineering import extract_date_features
 
 def predict_sales(test_path, store_path, model_path, scaler_path):
     # Load and preprocess test data
-    df_test = load_test_data(test_path, store_path)
+    df_test = load_data(test_path, store_path)
     df_test = handle_missing_values(df_test)
     df_test = convert_categorical_to_numeric(df_test)
     df_test = extract_date_features(df_test)

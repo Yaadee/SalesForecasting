@@ -1,34 +1,42 @@
-import joblib
-from datetime import datetime
+import pandas as pd
+import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import mean_absolute_error
-from  data_cleaning import load_and_merge_data, handle_missing_values, convert_categorical_to_numeric, extract_date_features
-from  preprocess import feature_engineering, scale_features
-from  models import build_model_pipeline
+from preprocess import load_data, preprocess_data
+from models import build_model, evaluate_model, save_model
+import logging
+import time
 
-# Load and preprocess training data
-df = load_and_merge_data('data/train.csv', 'data/store.csv')
-df = handle_missing_values(df)
-df = convert_categorical_to_numeric(df)
-df = extract_date_features(df)
-df = feature_engineering(df)
-df, scaler = scale_features(df, ['Sales', 'Customers', 'CompetitionDistance', 'CompetitionOpen', 'PromoOpen'])
+logging.basicConfig(filename='logs/training.log', level=logging.INFO, 
+                    format='%(asctime)s:%(levelname)s:%(message)s')
 
-# Split data
-X = df.drop(['Sales', 'Date'], axis=1)
-y = df['Sales']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+def main():
+    train_path = 'data/train.csv'
+    test_path = 'data/test.csv'
+    store_path = 'data/store.csv'
 
-# Train model
-pipeline = build_model_pipeline()
-pipeline.fit(X_train, y_train)
+    train, test, store = load_data(train_path, test_path, store_path)
+    X_train, y_train, X_test, scaler = preprocess_data(train, test, store)
 
-# Evaluate model
-preds = pipeline.predict(X_test)
-mae = mean_absolute_error(y_test, preds)
-print(f'Mean Absolute Error: {mae}')
+    # Split the data
+    X_train, X_val, y_train, y_val = train_test_split(X_train, y_train, test_size=0.2, random_state=42)
 
-# Save model
-timestamp = datetime.now().strftime('%Y-%m-%d-%H-%M-%S')
-joblib.dump(pipeline, f'app/model_{timestamp}.pkl')
-joblib.dump(scaler, f'app/scaler_{timestamp}.pkl')
+    # Build and train the model
+    model = build_model()
+
+    logging.info('Training RandomForestRegressor model...')
+    start_time = time.time()
+    model.fit(X_train, y_train)
+    training_time = time.time() - start_time
+    logging.info(f'Training time: {training_time} seconds')
+
+    # Evaluate the model
+    mse, mae, r2 = evaluate_model(model, X_val, y_val)
+    logging.info(f'MSE: {mse}, MAE: {mae}, R2: {r2}')
+
+    # Save the model
+    timestamp = time.strftime("%Y-%m-%d-%H-%M-%S")
+    save_model(model, scaler, f'app/model_{timestamp}.pkl')
+    logging.info('Model saved.')
+
+if __name__ == "__main__":
+    main()
