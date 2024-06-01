@@ -1,18 +1,3 @@
-# from sklearn.preprocessing import StandardScaler
-
-# def feature_engineering(df):
-#     df['CompetitionOpen'] = 12 * (df['Year'] - df['CompetitionOpenSinceYear']) + \
-#                              (df['Month'] - df['CompetitionOpenSinceMonth'])
-#     df['PromoOpen'] = 12 * (df['Year'] - df['Promo2SinceYear']) + \
-#                       (df['WeekOfYear'] - df['Promo2SinceWeek']) / 4.0
-#     df.fillna(0, inplace=True)
-#     return df
-
-# def scale_features(df, features):
-#     scaler = StandardScaler()
-#     df[features] = scaler.fit_transform(df[features])
-#     return df, scaler
-
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
@@ -58,30 +43,38 @@ def preprocess_data(train, test, store):
     # Handle missing values
     train = handle_missing_values(train)
     test = handle_missing_values(test)
+    
 
     # Feature engineering
     train = feature_engineering(train)
     test = feature_engineering(test)
+   
+    
+    # Check if 'Sales' column exists
+    if 'Sales' not in train.columns:
+        raise KeyError("'Sales' column not found in training data.")
 
     # Select features
-    features = ['Store', 'DayOfWeek', 'Promo', 'StateHoliday', 'SchoolHoliday', 
+    features = ['Store', 'DayOfWeek', 'Promo', 'SchoolHoliday', 
                 'Year', 'Month', 'Day', 'WeekOfYear', 'Weekday', 'Weekend',
                 'MonthStart', 'MonthMid', 'MonthEnd', 'DaysToHoliday', 'DaysAfterHoliday',
-                'StoreType', 'Assortment', 'CompetitionDistance', 'CompetitionOpenSinceMonth', 
-                'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek', 'Promo2SinceYear', 'PromoInterval']
-    
-    # Convert categorical features to numerical
-    train = pd.get_dummies(train, columns=['StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'])
-    test = pd.get_dummies(test, columns=['StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'])
+                'CompetitionDistance', 'CompetitionOpenSinceMonth', 
+                'CompetitionOpenSinceYear', 'Promo2', 'Promo2SinceWeek', 'Promo2SinceYear']
 
-    # Ensure same columns in train and test
-    train, test = train.align(test, join='inner', axis=1, fill_value=0)
+    # Convert categorical features to numerical
+    train = pd.get_dummies(train, columns=['StateHoliday'])
+    test = pd.get_dummies(test, columns=['StateHoliday'])
+   
+
+    # # Ensure same columns in train and test
+    # train, test = train.align(test, join='inner', axis=1)
+    # print("after compare test and train\n",train.columns)
+    # print(test.columns)
 
     # Separate features and target
     X_train = train[features]
-    y_train = train['Sales']
+    y_train = train['Sales']  # Ensure 'Sales' column exists
     X_test = test[features]
-
     # Scaling the data
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)

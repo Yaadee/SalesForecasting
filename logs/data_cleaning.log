@@ -215,3 +215,45 @@
 2024-05-30 19:01:15,712:INFO:Column Assortment converted to numeric and cast to int32
 2024-05-30 19:01:15,830:INFO:Column PromoInterval converted to numeric and cast to int32
 2024-05-30 19:01:15,991:INFO:New features extracted from date column
+2024-06-01 08:49:24,561:INFO:Data loaded from train, test, and store files
+2024-06-01 08:49:25,059:INFO:Data merged with store data
+2024-06-01 08:50:38,742:INFO:Data loaded from train, test, and store files
+2024-06-01 08:50:38,851:INFO:Data merged with store data
+2024-06-01 08:50:39,058:INFO:New features extracted from date column
+2024-06-01 08:50:39,068:INFO:New features extracted from date column
+2024-06-01 08:53:44,302:INFO:Data loaded from train, test, and store files
+2024-06-01 08:53:44,408:INFO:Data merged with store data
+2024-06-01 08:53:44,568:INFO:New features extracted from date column
+2024-06-01 08:53:44,577:INFO:New features extracted from date column
+2024-06-01 08:56:34,456:INFO:New features extracted from date column
+2024-06-01 08:56:34,464:INFO:New features extracted from date column
+2024-06-01 08:58:23,558:INFO:New features extracted from date column
+2024-06-01 08:58:23,569:INFO:New features extracted from date column
+2024-06-01 08:58:23,623:INFO:Missing values handled
+2024-06-01 08:58:23,626:INFO:Missing values handled
+2024-06-01 08:58:23,706:INFO:Categorical columns identified: Index(['StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-06-01 08:58:23,807:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-06-01 08:58:23,896:INFO:Column StoreType converted to numeric and cast to int32
+2024-06-01 08:58:23,989:INFO:Column Assortment converted to numeric and cast to int32
+2024-06-01 08:58:24,084:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-06-01 08:58:24,086:INFO:Categorical columns identified: Index(['StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-06-01 08:58:24,090:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-06-01 08:58:24,093:INFO:Column StoreType converted to numeric and cast to int32
+2024-06-01 08:58:24,097:INFO:Column Assortment converted to numeric and cast to int32
+2024-06-01 08:58:24,101:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-06-01 08:58:24,101:INFO:Data preprocessing complete
+2024-06-01 08:58:28,225:INFO:Processed data saved to CSV files
+2024-06-01 09:19:32,998:INFO:Data loaded and merged
+2024-06-01 09:19:33,063:INFO:Missing values handled
+2024-06-01 09:19:33,129:INFO:Categorical columns identified: Index(['StateHoliday', 'StoreType', 'Assortment', 'PromoInterval'], dtype='object')
+2024-06-01 09:19:33,225:INFO:Column StateHoliday converted to numeric and cast to int32
+2024-06-01 09:19:33,321:INFO:Column StoreType converted to numeric and cast to int32
+2024-06-01 09:19:33,409:INFO:Column Assortment converted to numeric and cast to int32
+2024-06-01 09:19:33,501:INFO:Column PromoInterval converted to numeric and cast to int32
+2024-06-01 09:19:33,620:INFO:New features extracted from date column
+2024-06-01 09:19:58,972:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-01 09:20:00,346:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-01 09:20:02,661:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-01 09:20:02,948:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-01 09:20:05,136:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2024-06-01 09:20:05,412:INFO:Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.

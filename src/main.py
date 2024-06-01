@@ -1,7 +1,7 @@
 import pandas as pd
-from data_cleaning import load_and_merge_data, handle_missing_values, convert_categorical_to_numeric
-from feature_engineering import extract_date_features, create_new_features
+from data_cleaning import load_and_merge_data, handle_missing_values, convert_categorical_to_numeric, extract_date_features
 from exploratory_analysis import analyze_sales_trends, analyze_day_of_week_sales, analyze_store_types_and_assortment, analyze_promotions_and_competitions, analyze_customer_visits
+from feature_engineering import create_new_features
 
 def main():
     # Load and merge data
@@ -13,8 +13,10 @@ def main():
     # Convert categorical to numeric
     df = convert_categorical_to_numeric(df)
 
-    # Feature engineering
+    # Extract date features
     df = extract_date_features(df)
+
+    # Feature engineering
     df = create_new_features(df)
 
     # Save processed data

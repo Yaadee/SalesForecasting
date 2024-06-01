@@ -1,0 +1,7 @@
+import joblib
+
+try:
+    model = joblib.load('app/model.pkl')
+    print("Model loaded successfully")
+except EOFError:
+    print("Error: model.pkl file is corrupted or incomplete")
