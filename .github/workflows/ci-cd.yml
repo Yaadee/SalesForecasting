@@ -19,13 +19,13 @@ jobs:
         pip install -r requirements.txt
         pip install dvc
 
-    - name: Configure DVC remote
-      run: |
-        sudo mkdir -p /home/runner/SalesForecastDVC
-        dvc remote add -d -f localremote /home/runner/SalesForecastDVC
+    # - name: Configure DVC remote
+    #   run: |
+    #     sudo mkdir -p /home/runner/SalesForecastDVC
+    #     dvc remote add -d -f localremote /home/runner/SalesForecastDVC
 
-    - name: Pull data from DVC
-      run: dvc pull
+    # - name: Pull data from DVC
+    #   run: dvc pull
 
     - name: Run tests
       run: pytest tests/
